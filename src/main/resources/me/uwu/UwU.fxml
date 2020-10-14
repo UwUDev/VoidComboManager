@@ -21,7 +21,7 @@
    <children>
       <Pane prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #222222;">
          <children>
-            <JFXTextArea fx:id="comboTextField" focusColor="#8a3fea" layoutX="14.0" layoutY="139.0" prefHeight="532.0" prefWidth="274.0" style="-fx-background-color: #333333; -fx-text-fill: #FFFFFF;" unFocusColor="WHITE" />
+            <JFXTextArea fx:id="comboArea" focusColor="#8a3fea" layoutX="14.0" layoutY="139.0" prefHeight="532.0" prefWidth="274.0" style="-fx-background-color: #333333; -fx-text-fill: #FFFFFF;" unFocusColor="WHITE" />
             <Text fill="WHITE" layoutX="307.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Void Combo Manager" textAlignment="CENTER" wrappingWidth="666.0">
                <font>
                   <Font name="Ebrima" size="53.0" />
@@ -29,8 +29,8 @@
             </Text>
             <JFXTextField fx:id="fieldInputCombo" focusColor="#8a3fea" layoutX="424.0" layoutY="137.0" prefHeight="25.0" prefWidth="328.0" promptText="Enter combo input path" style="-fx-text-fill: #FFFFFF;" unFocusColor="WHITE" />
             <JFXTextField fx:id="fieldOutputCombo" focusColor="#8a3fea" layoutX="424.0" layoutY="196.0" prefHeight="25.0" prefWidth="328.0" promptText="Enter combo output path" style="-fx-text-fill: #FFFFFF;" unFocusColor="WHITE" />
-            <JFXButton layoutX="330.0" layoutY="141.0" prefHeight="25.0" prefWidth="78.0" style="-fx-background-color: #8a3fea;" text="Import" />
-            <JFXButton layoutX="330.0" layoutY="196.0" prefHeight="25.0" prefWidth="78.0" style="-fx-background-color: #8a3fea;" text="Export" />
+            <JFXButton layoutX="330.0" layoutY="141.0" prefHeight="25.0" prefWidth="78.0" style="-fx-background-color: #8a3fea;" text="Import" onAction="#importF"/>
+            <JFXButton layoutX="330.0" layoutY="196.0" prefHeight="25.0" prefWidth="78.0" style="-fx-background-color: #8a3fea;" text="Export" onAction="#exportF"/>
             <Text fill="WHITE" fontSmoothingType="LCD" layoutX="14.0" layoutY="702.0" strokeType="OUTSIDE" strokeWidth="0.0" text="©UwU#0001 2020." />
             <JFXButton fx:id="openImportFile" layoutX="758.0" layoutY="141.0" ripplerFill="WHITE" text="" textFill="WHITE" onAction="#openFileImport">
                <graphic>
@@ -42,6 +42,7 @@
                   <FontAwesomeIconView fill="WHITE" glyphName="FOLDER_OPEN" size="16.0" />
                </graphic>
             </JFXButton>
+            <Text fill="WHITE" fontSmoothingType="LCD" layoutX="118.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your combo :" />
          </children>
       </Pane>
    </children>
