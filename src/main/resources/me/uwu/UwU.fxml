@@ -38,6 +38,10 @@
             <Text fill="WHITE" fontSmoothingType="LCD" layoutX="810.0" layoutY="216.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Convert to user:pass" />
             <JFXButton layoutX="930.0" layoutY="200.0" prefHeight="25.0" prefWidth="78.0" style="-fx-background-color: #8a3fea;" text="Process" onAction="#setUserPass"/>
 
+            <Text fill="WHITE" fontSmoothingType="LCD" layoutX="1040.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Set splitter" />
+            <JFXTextField fx:id="fieldInputSplitter" focusColor="#8a3fea" layoutX="1111.0" layoutY="137.0" prefHeight="25.0" prefWidth="30.0" style="-fx-text-fill: #FFFFFF; -fx-alignment: center;" text=":" unFocusColor="WHITE" onKeyTyped="#setLimit" onKeyPressed="#setLimit" onKeyReleased="#setLimit"/>
+            <JFXButton layoutX="1190.0" layoutY="141.0" prefHeight="25.0" prefWidth="78.0" style="-fx-background-color: #8a3fea;" text="set" onAction="#setSplitter"/>
+
             <Text fill="WHITE" fontSmoothingType="LCD" layoutX="14.0" layoutY="702.0" strokeType="OUTSIDE" strokeWidth="0.0" text="©                   2020."/>
             <Text fill="#3aa8c9" fontSmoothingType="LCD" layoutX="14.0" layoutY="702.0" strokeType="OUTSIDE" strokeWidth="0.0" text="    UwU#0001" onMouseClicked="#credits"/>
             <JFXButton fx:id="openImportFile" layoutX="758.0" layoutY="141.0" ripplerFill="WHITE" text="" textFill="WHITE" onAction="#openFileImport">

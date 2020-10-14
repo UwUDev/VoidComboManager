@@ -5,6 +5,7 @@ import com.jfoenix.controls.JFXTextArea;
 import com.jfoenix.controls.JFXTextField;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
@@ -16,6 +17,7 @@ import java.io.File;
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
+import java.util.concurrent.CompletableFuture;
 
 public class Controller {
 
@@ -26,7 +28,9 @@ public class Controller {
 
     public JFXTextField fieldInputCombo;
     public JFXTextField fieldOutputCombo;
+    public JFXTextField fieldInputSplitter;
     public JFXTextArea comboArea;
+
 
     public Controller(){instance = this;}
 
@@ -76,5 +80,16 @@ public class Controller {
 
     public void setUserPass(ActionEvent actionEvent) {
         comboArea.setText(ComboUtils.toUserPass(comboArea.getText()));
+    }
+
+    public void setLimit(KeyEvent inputMethodEvent) {
+        if (fieldInputSplitter.getText().length() > 4) {
+            String s = fieldInputSplitter.getText().substring(0, 4);
+            fieldInputSplitter.setText(s);
+        }
+    }
+
+    public void setSplitter(ActionEvent actionEvent) {
+        ComboUtils.splitter = fieldInputSplitter.getText();
     }
 }
