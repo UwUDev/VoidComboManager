@@ -9,8 +9,8 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
-
 <?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+
 <GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="me.uwu.controllers.Controller">
    <columnConstraints>
       <ColumnConstraints />
@@ -31,6 +31,10 @@
             <JFXTextField fx:id="fieldOutputCombo" focusColor="#8a3fea" layoutX="424.0" layoutY="196.0" prefHeight="25.0" prefWidth="328.0" promptText="Enter combo output path" style="-fx-text-fill: #FFFFFF;" unFocusColor="WHITE" />
             <JFXButton layoutX="330.0" layoutY="141.0" prefHeight="25.0" prefWidth="78.0" style="-fx-background-color: #8a3fea;" text="Import" onAction="#importF"/>
             <JFXButton layoutX="330.0" layoutY="196.0" prefHeight="25.0" prefWidth="78.0" style="-fx-background-color: #8a3fea;" text="Export" onAction="#exportF"/>
+
+            <Text fill="WHITE" fontSmoothingType="LCD" layoutX="810.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Convert to user:pass" />
+            <JFXButton layoutX="930.0" layoutY="141.0" prefHeight="25.0" prefWidth="78.0" style="-fx-background-color: #8a3fea;" text="Process" onAction="#setUserPass"/>
+
             <Text fill="WHITE" fontSmoothingType="LCD" layoutX="14.0" layoutY="702.0" strokeType="OUTSIDE" strokeWidth="0.0" text="©                   2020."/>
             <Text fill="#3aa8c9" fontSmoothingType="LCD" layoutX="14.0" layoutY="702.0" strokeType="OUTSIDE" strokeWidth="0.0" text="    UwU#0001" onMouseClicked="#credits"/>
             <JFXButton fx:id="openImportFile" layoutX="758.0" layoutY="141.0" ripplerFill="WHITE" text="" textFill="WHITE" onAction="#openFileImport">

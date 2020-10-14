@@ -8,6 +8,7 @@ import javafx.fxml.FXML;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
+import me.uwu.utils.ComboUtils;
 import me.uwu.utils.FileUtils;
 import me.uwu.utils.WebUtils;
 
@@ -67,5 +68,9 @@ public class Controller {
 
     public void credits(MouseEvent mouseEvent) throws URISyntaxException {
         WebUtils.openWebpage(new URI("https://discord.gg/fjzQ9AD"));
+    }
+
+    public void setUserPass(ActionEvent actionEvent) {
+        comboArea.setText(ComboUtils.toUserPass(comboArea.getText()));
     }
 }
