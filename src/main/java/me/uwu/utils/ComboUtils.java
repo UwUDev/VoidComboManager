@@ -1,5 +1,7 @@
 package me.uwu.utils;
 
+import java.util.*;
+
 public class ComboUtils {
 
     public static String toUserPass(String data){
@@ -14,6 +16,23 @@ public class ComboUtils {
             sb.append(user).append(":").append(pass).append("\n");
         }
 
+        return sb.toString();
+    }
+
+    public static String removeDuplicates(String data){
+        String[] lines = data.split("\n");
+        StringBuilder sb = new StringBuilder();
+
+        List<String> al = Arrays.asList(lines);
+        ArrayList<String> cleanAl = new ArrayList<>();
+
+        for (String line : al) {
+            if (!cleanAl.contains(line)) {
+                cleanAl.add(line);
+                sb.append(line).append("\n");
+            }
+        }
+        sb.setLength(sb.length() - 1);
         return sb.toString();
     }
 

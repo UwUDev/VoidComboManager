@@ -70,6 +70,10 @@ public class Controller {
         WebUtils.openWebpage(new URI("https://discord.gg/fjzQ9AD"));
     }
 
+    public void removeDuplicates(ActionEvent actionEvent) {
+        comboArea.setText(ComboUtils.removeDuplicates(comboArea.getText()));
+    }
+
     public void setUserPass(ActionEvent actionEvent) {
         comboArea.setText(ComboUtils.toUserPass(comboArea.getText()));
     }
