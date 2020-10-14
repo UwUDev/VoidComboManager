@@ -5,12 +5,16 @@ import com.jfoenix.controls.JFXTextArea;
 import com.jfoenix.controls.JFXTextField;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.input.MouseEvent;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 import me.uwu.utils.FileUtils;
+import me.uwu.utils.WebUtils;
 
 import java.io.File;
 import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
 
 public class Controller {
 
@@ -59,5 +63,9 @@ public class Controller {
     public void exportF(ActionEvent actionEvent) throws IOException {
         if (fieldOutputCombo.getLength() < 2) return;
         FileUtils.stringToFile(fieldOutputCombo.getText(), comboArea.getText());
+    }
+
+    public void credits(MouseEvent mouseEvent) throws URISyntaxException {
+        WebUtils.openWebpage(new URI("https://discord.gg/fjzQ9AD"));
     }
 }

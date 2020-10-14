@@ -31,7 +31,8 @@
             <JFXTextField fx:id="fieldOutputCombo" focusColor="#8a3fea" layoutX="424.0" layoutY="196.0" prefHeight="25.0" prefWidth="328.0" promptText="Enter combo output path" style="-fx-text-fill: #FFFFFF;" unFocusColor="WHITE" />
             <JFXButton layoutX="330.0" layoutY="141.0" prefHeight="25.0" prefWidth="78.0" style="-fx-background-color: #8a3fea;" text="Import" onAction="#importF"/>
             <JFXButton layoutX="330.0" layoutY="196.0" prefHeight="25.0" prefWidth="78.0" style="-fx-background-color: #8a3fea;" text="Export" onAction="#exportF"/>
-            <Text fill="WHITE" fontSmoothingType="LCD" layoutX="14.0" layoutY="702.0" strokeType="OUTSIDE" strokeWidth="0.0" text="©UwU#0001 2020." />
+            <Text fill="WHITE" fontSmoothingType="LCD" layoutX="14.0" layoutY="702.0" strokeType="OUTSIDE" strokeWidth="0.0" text="©                   2020."/>
+            <Text fill="#3aa8c9" fontSmoothingType="LCD" layoutX="14.0" layoutY="702.0" strokeType="OUTSIDE" strokeWidth="0.0" text="    UwU#0001" onMouseClicked="#credits"/>
             <JFXButton fx:id="openImportFile" layoutX="758.0" layoutY="141.0" ripplerFill="WHITE" text="" textFill="WHITE" onAction="#openFileImport">
                <graphic>
                   <FontAwesomeIconView fill="WHITE" glyphName="FOLDER_OPEN" size="16.0" />
