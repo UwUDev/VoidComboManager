@@ -12,7 +12,7 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("UwU.fxml"));
-        primaryStage.setTitle("InstaStonks by UwU#0001");
+        primaryStage.setTitle("Void Combo Manager by UwU#0001");
         primaryStage.setScene(new Scene(root, 1270, 710));
         primaryStage.getIcons().add(new Image(getClass().getResourceAsStream("icon.png")));
         primaryStage.show();
