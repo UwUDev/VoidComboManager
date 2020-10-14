@@ -13,6 +13,8 @@ public class FileUtils {
         while ((st = br.readLine()) != null)
             sb.append(st).append("\n");
 
+        sb.setLength(sb.length() - 1);
+
         return sb.toString();
     }
 
